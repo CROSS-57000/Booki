@@ -2,7 +2,7 @@
 
 * {
     font-family: 'Raleway', sans-serif;
-    padding:0;
+    padding: 0;
 }
 
 :root {
@@ -112,7 +112,8 @@
 
 /****** Populaires ***********/
 
-.populaires { /* background color white populaire */
+.populaires {
+    /* background color white populaire */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -132,6 +133,7 @@
     align-items: center;
     margin-bottom: 22px;
     margin-top: -22px;
+    font-size: 22px;
 }
 
 .populaires-cards img {
@@ -195,6 +197,7 @@
     position: relative;
     bottom: -80px;
     padding-left: 20px;
+    font-size: 22px;
 }
 
 #title-h3-marseilles {
@@ -206,6 +209,7 @@
 .title-display-more {
     margin-top: 30px;
     position: relative;
+    font-size: 18px;
 }
 
 footer {
@@ -312,12 +316,14 @@ footer .articlefooter {
     width: 446.67px;
     height: 163px;
 }
+
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
 }
+
 header .imglogo {
     width: 61.09px;
     height: 19px;
@@ -370,8 +376,8 @@ h4 {
     display: flex;
     list-style: none;
     align-items: center;
-    margin-left:40px ;
-    margin-right:40px;
+    margin-left: 40px;
+    margin-right: 40px;
     margin-bottom: 40px;
 }
 
@@ -421,6 +427,14 @@ ul img {
 }
 
 /* Formulaire */
+
+.searchbar-pc {
+    display: block;
+}
+
+.searchbar-smartphone {
+    display: none;
+}
 
 form div,
 input,
@@ -482,8 +496,39 @@ form input::placeholder {
 
 /* Medium devices (tablets, less/equal than 1024px) */
 
-@media (max-width: 1024px) { 
-    
+@media (max-width: 1024px) {
+
+    .populaires-title h3 {
+        margin-left: -609px;
+    }
+
+    .activites .cards1 {
+        width: 170px;
+        display: flex;
+        flex: 1 0 90px;
+        height: 293px;
+    }
+
+    .activites .cards1 .img2 {
+        width: 100%;
+        height: 200px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .activites .cards1:nth-child(2) .img2 {
+        height: 200px;
+        overflow: hidden;
+    }
+
+    .main-container {
+        width: 114%;
+    }
+
+    .container-header-link {
+        margin-right: -40px;
+    }
+
     .hebergements-and-populaires {
 
         flex-direction: column;
@@ -492,25 +537,33 @@ form input::placeholder {
     .hebergements {
         width: 100%;
         column-count: 3;
-        background: none;
+        background: #F2F2F2;
     }
 
     .hebergements .card {
         width: 333px;
-        
-    }
 
-    .populaires {
-        flex: 100%;
     }
 
     .hebergements article.card {
         flex: 1;
     }
 
+    #title-h3-marseilles {
+        top: 400px;
+    }
+
+    .populaires {
+        flex: 100%;
+        margin-left: 0;
+        margin-top: 25px;
+        width: 100%;
+    }
+
     .populaires-cards {
         display: flex;
         flex-wrap: wrap;
+        width: 100%;
     }
 
     .populaires-cards .card-title {
@@ -523,37 +576,23 @@ form input::placeholder {
 
     .activites {
         display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
-        padding-top: 900px;
-    }
-
-    .cards1 {
-        display: flex;
-        flex: 1 0 90px;
-    }
-
-    .img2 {
-        width: 50%;
-        height: 50%;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
+        padding-top: 426px;
     }
 
     .ul-header {
         display: flex;
-        flex-direction: column;
         margin: 10px;
     }
-    
+
     footer {
         display: flex;
-        flex-direction: column;
-        margin: 0px;
-        padding: 0;
-        width: 50%;
-        height: auto;
-        margin-top: 200px;
+
+    }
+
+    .populaires-cards .cards2 {
+        width: 252px;
+
     }
 }
 
@@ -561,7 +600,31 @@ form input::placeholder {
 
 @media (max-width: 768px) {
 
-    
+    /* Form */
+
+    .searchbar-pc {
+        display: none;
+    }
+
+    .searchbar-smartphone {
+        display: block;
+    }
+
+    form button {
+        border: none;
+        background: none;
+        border: none;
+        border-radius: 0px 15px 15px 0px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 0;
+    }
+
     .main-container {
         padding: 0;
         margin: 0;
@@ -584,7 +647,7 @@ form input::placeholder {
         margin-top: 35px;
         margin-bottom: 30px;
         width: 100%;
-       
+
     }
 
     header .container-header-link a {
@@ -604,17 +667,20 @@ form input::placeholder {
         margin: 0;
     }
 
-    h5, h2 {
+    h5,
+    h2 {
         inline-size: 370px;
         overflow-wrap: break-word;
         margin-top: 20px;
         margin-bottom: 20px;
         font-size: 1.5rem;
     }
-    h6{
+
+    h6 {
         margin-left: 45px;
 
     }
+
     form {
         margin: 35px 0;
         justify-content: center;
@@ -645,37 +711,38 @@ form input::placeholder {
         width: 100px;
         padding: 30px;
     }
+
     /* Hebergement */
 
     .hebergements-and-populaires {
         display: flex;
         flex-direction: column;
         max-width: 768px;
-        
+
     }
 
     .hebergements .card .img {
-        width: 313.33px;
+        width: 384.33px;
         height: 124px;
     }
 
     .hebergements .card {
-        width: 333px;
+        width: 404px;
         height: 200px;
-        
+
     }
 
     #title-h3-header {
         bottom: 890px;
     }
-    
+
     .activites {
         display: flex;
         flex-direction: column;
-        margin: 30px;
+        margin:0 auto;
         padding: 0;
-        padding-top: 1900px;
-        width: 100%;
+        padding-top: 1756px;
+        width: 150px;
     }
 
     .cards1 {
@@ -691,7 +758,7 @@ form input::placeholder {
     }
 
     /* Populaires */
-    
+
     .hebergements-and-populaires {
         width: 100%;
         margin: 0;
@@ -714,7 +781,7 @@ form input::placeholder {
         max-height: 146px;
     }
 
-     .populaires-cards .cards2 img {
+    .populaires-cards .cards2 img {
         max-width: 90.67px;
         max-height: 126px;
     }
@@ -741,11 +808,12 @@ form input::placeholder {
         flex-direction: column;
         width: 100%;
         column-count: 1;
+        background: none;
     }
 
     #title-h3-marseilles {
         position: absolute;
-        top: 3116px;
+        top: 3048px;
     }
 
     .activites .img2 {
@@ -774,5 +842,38 @@ form input::placeholder {
 
     h5 {
         font-size: 14px;
+    }
+
+    ul img {
+        margin-left: -4px;
+        padding-right: 0px;
+    }
+
+    .header-li button {
+        font-size: 0.9rem;
+    }
+}
+/* fix size tablet for title */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .populaires-title h3 {
+        margin-left: -312px;
+    }
+}
+/* fix size tablet for smarthone */
+@media screen and (min-width: 0px) and (max-width: 768px) {
+    .populaires-title h3 {
+        margin-left: -157px;
+    }
+
+    .activities {
+        width: 100%;
+        left: 0;
+    }
+
+    .activites .cards1 {
+        width: 200%;
+        padding: 0;
+        height: auto;
+        margin: 10px auto;
     }
 }
