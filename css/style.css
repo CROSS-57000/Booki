@@ -78,7 +78,6 @@ h1, h4 {
 p{
     font-family: 'Raleway';
     font-style: normal;
-    font-weight: 700;
     font-size: 18px;
     line-height: 21px;
 
@@ -482,6 +481,11 @@ form input::placeholder {
 
 
 @media (max-width: 1024px) {
+    .activites {
+        
+        width: 136%;
+        padding-top: 37px;
+    }
     
     
     .activites .cards1 {
@@ -498,10 +502,7 @@ form input::placeholder {
         border-top-right-radius: 20px;
     }
 
-    .activites .cards1:nth-child(2) .img2 {
-        height: 200px;
-        overflow: hidden;
-    }
+   
 
     .main-container {
         width: 100%;
@@ -515,15 +516,22 @@ form input::placeholder {
     .hebergements-and-populaires {
 
         flex-direction: column;
+        width: 127%;
     }
 
-    .hebergements {
 
-    display: flex;
-    flex-wrap: wrap;
-        width: 90%;
-        
-        background: #F2F2F2;
+    .hebergements {
+        width: 100%;
+   
+    }
+
+    .hebergementcard {
+        display: flex;
+        flex-wrap: wrap;
+        width: 857px;
+        margin: auto;
+        gap: 30px;
+
     }
 
     .hebergements .card {
@@ -531,12 +539,20 @@ form input::placeholder {
 
     }
 
+    .hebergements .card .img {
+        width: 215px;
+    }
+        
+    
     .hebergements article.card {
         flex: 1;
+        width: 159px;
+        height: auto;
+    
     }
 
     #title-h3-marseilles {
-        top: 400px;
+        top: 32px;
     }
 
     .populaires {
@@ -544,12 +560,20 @@ form input::placeholder {
         margin-left: 0;
         margin-top: 25px;
         width: 100%;
+        padding-bottom: 43px;
     }
 
     .populaires-cards {
         display: flex;
         flex-direction: row;
         width: 100%;
+    }
+
+    .populaires-cards .cards2 {
+        width: 283px;
+        height: auto;
+        margin: 2px;
+        margin-top: -22px;
     }
 
     .populaires-cards .card-title {
@@ -560,12 +584,6 @@ form input::placeholder {
         font-size: 13px;
     }
 
-    .activites {
-        display: flex;
-        flex-wrap: wrap;
-        padding-top: 426px;
-    }
-
     .ul-header {
         display: flex;
         margin: 10px;
@@ -573,13 +591,15 @@ form input::placeholder {
 
     footer {
         display: flex;
+        width: 128%;
+    }
+    .populaires-cards .cards2 img {
+        height: 122px;
 
     }
+      
+    
 
-    .populaires-cards .cards2 {
-        width: 252px;
-
-    }
 }
 
 /* Small devices (phones, less than 768px) */
