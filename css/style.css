@@ -183,6 +183,7 @@ p {
     width: 100%;
     border-radius: 25px;
 }
+
 /* 
 #title-h3-marseilles {
     position: relative;
@@ -708,7 +709,7 @@ ul .header-li:last-child button {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        margin: 0px;
+        margin: 0 auto;
     }
 
     .header-li button {
@@ -719,6 +720,7 @@ ul .header-li:last-child button {
     .header-li {
         padding: 9px;
         width: 121px;
+        margin: 0;
     }
 
     .hebergements-and-populaires {
@@ -731,7 +733,7 @@ ul .header-li:last-child button {
     .hebergementcard {
         margin-top: 91px;
         margin-left: 0px;
-        width: 530px;
+        width: 100%;
         margin-top: 10px;
         height: 100%;
     }
@@ -741,10 +743,10 @@ ul .header-li:last-child button {
         height: 124px;
     }
 
-    .hebergements .card {
+    .hebergements article.card {
         width: 404px;
         height: 200px;
-
+        margin: 20px 0;
     }
 
     h1,
@@ -761,16 +763,9 @@ ul .header-li:last-child button {
         width: 100%;
     }
 
-    .cards1 {
-        flex-grow: 1; 
-        margin: 0 auto;
-        width: 100px;
-        height: 100px;
-    }
-
     .cards1 .img2 {
-        width: 297.5px;
-        height: auto;
+        width: 307px;;
+        height: 141px;
     }
 
     /* Populaires */
@@ -799,9 +794,9 @@ ul .header-li:last-child button {
         display: block;
         margin: 0;
         align-items: center;
-        width: 78%;
+        width: 87%;
         padding: 10px;
-        margin-left: 19px;
+        margin-left: 0px;
     }
 
     .populaires-cards {
@@ -816,20 +811,16 @@ ul .header-li:last-child button {
         width: 108px;
         background: none;
     }
-/* 
-    #title-h3-marseilles {
-        position: absolute;
-        top: 3048px;
-    } */
 
-    .activites .img2 {
-        max-width: 315px;
-        max-height: 141px;
+    #title-h3-marseilles {
+        margin-left: 21px;
     }
 
-    .activites .card1 {
-        max-width: 315px;
-        max-height: 200px;
+    .activites .cards1 {
+        display: flex;
+        margin: 30px 16px;
+        width: 86%;
+        height: auto;
     }
 
     footer {
@@ -857,7 +848,8 @@ ul .header-li:last-child button {
         width: 58%;
     }
 
-    main, .activites {
+    main,
+    .activites {
         height: auto;
     }
 }
