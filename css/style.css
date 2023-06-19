@@ -184,18 +184,7 @@ p {
     border-radius: 25px;
 }
 
-/* 
-#title-h3-marseilles {
-    position: relative;
-    top: 20px;
-    left: 20px;
-}
 
-.title-display-more {
-    margin-top: 0%;
-    position: relative;
-    font-size: 18px;
-} */
 
 footer {
     display: flex;
@@ -464,9 +453,7 @@ form input::placeholder {
     text-align: center;
 }
 
-ul .header-li:last-child button {
-    width: 100%;
-}
+
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 /****** Media queries ***********/
@@ -479,7 +466,7 @@ ul .header-li:last-child button {
     }
 
     .activites {
-        width: 85%;
+        width: 75%;
         padding-top: 37px;
     }
 
@@ -509,7 +496,7 @@ ul .header-li:last-child button {
     }
 
     .container-header-link {
-        margin-right: -40px;
+        margin-right: 66px;
     }
 
     .hebergements-and-populaires {
@@ -520,7 +507,7 @@ ul .header-li:last-child button {
 
     .hebergements {
         margin: 0;
-        width: 100%;
+        width: 82%;;
 
     }
 
@@ -552,7 +539,7 @@ ul .header-li:last-child button {
         flex: 85%;
         margin-left: 0;
         margin-top: 25px;
-        width: 100%;
+        width: 82%;
         padding-bottom: 43px;
     }
 
@@ -563,7 +550,7 @@ ul .header-li:last-child button {
     }
 
     .populaires-cards .cards2 {
-        width: 222px;
+        width: 30%;
         height: auto;
 
     }
@@ -584,7 +571,7 @@ ul .header-li:last-child button {
 
     footer {
         display: flex;
-        width: 85%;
+        width: 69%;
     }
 
     footer div,
@@ -610,19 +597,20 @@ ul .header-li:last-child button {
     }
 
     ul .header-li {
-        margin: 0 23px;
+        margin: 0px 13px;
 
     }
 
-    ul .header-li:last-child button {
-        margin-right: 0;
-    }
 
 }
 
 
 @media (max-width: 768px) {
 
+    p{
+        margin-right: 72px;
+        margin-left: 22px;
+}
     .searchbar-pc {
         display: none;
     }
@@ -651,15 +639,22 @@ ul .header-li:last-child button {
         margin: 0;
     }
 
-    .imglogo,
+    
     h2,
     h5 {
         display: block;
         width: 100%;
         margin: 0 auto;
         margin-bottom: 10px;
+        
     }
 
+    header .imglogo{
+        margin: 0 153px;
+        margin-bottom: 10px;
+
+    }
+    
     header {
         display: block;
         width: 100%;
@@ -709,17 +704,18 @@ ul .header-li:last-child button {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        margin: 0 auto;
+        margin: 0 0px;
     }
 
-    .header-li button {
-        padding: 20px;
-
+    ul .header-li button {
+        width: 138px;
+        margin-left: 13px;
+        padding: 6px;
     }
 
-    .header-li {
+    ul .header-li {
         padding: 9px;
-        width: 121px;
+        width: 147px;
         margin: 0;
     }
 
@@ -739,7 +735,7 @@ ul .header-li:last-child button {
     }
 
     .hebergements .card .img {
-        width: 307.33px;
+        width: 295px;
         height: 124px;
     }
 
@@ -752,6 +748,7 @@ ul .header-li:last-child button {
     h1,
     h4 {
         font-size: 100%;
+        margin-left: 10px;
     }
 
     .activites {
@@ -763,9 +760,9 @@ ul .header-li:last-child button {
         width: 100%;
     }
 
-    .cards1 .img2 {
-        width: 307px;;
-        height: 141px;
+    .activites .cards1 .img2 {
+        width: 313px;
+        height: 134px;
     }
 
     /* Populaires */
@@ -781,7 +778,7 @@ ul .header-li:last-child button {
     .populaires-cards .cards2 {
         display: flex;
         align-items: center;
-        width: 345px;
+        width: 331px;
         height: 145px;
     }
 
@@ -794,7 +791,7 @@ ul .header-li:last-child button {
         display: block;
         margin: 0;
         align-items: center;
-        width: 87%;
+        width: 85%;
         padding: 10px;
         margin-left: 0px;
     }
@@ -802,7 +799,7 @@ ul .header-li:last-child button {
     .populaires-cards {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 98%;
     }
 
     .hebergements {
@@ -852,4 +849,5 @@ ul .header-li:last-child button {
     .activites {
         height: auto;
     }
+
 }
