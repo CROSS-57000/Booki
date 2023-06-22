@@ -480,11 +480,10 @@ footer ul {
 
 @media (max-width: 1024px) {
 
-
-   
     h6 {
         width: 85%;
     }
+
     .main-container {
         height: 100%;
         width: 100%;
@@ -497,11 +496,12 @@ footer ul {
     header {
         width: 85%;
     }
+
     .container-header-link {
-        margin-right: 66px;
+        margin-right: 0px;
     }
 
-    /******** Formulaire *********/
+    /******** Liste *********/
 
     .filters {
         display: flex;
@@ -524,7 +524,7 @@ footer ul {
     ul .header-li {
         margin: 0px 13px;
     }
-    
+
     ul .header-li button {
         font-size: 13px;
         margin-left: 0px;
@@ -536,7 +536,7 @@ footer ul {
     .hebergements-and-populaires {
         margin: 0;
         flex-direction: column;
-        width: 85%;
+        width: 100%;
     }
 
     /******** Hebergements ********/
@@ -548,7 +548,7 @@ footer ul {
     }
 
     .hebergementcard {
-        width: 718px;
+        width: 836px;
         height: 554px;
         margin-left: 31px;
         margin: 0 0px;
@@ -557,11 +557,11 @@ footer ul {
     }
 
     .hebergements .card .img {
-        width: 195px;
+        width: 229px;
     }
 
     .hebergements article.card {
-        flex: 1;
+       
         width: 177px;
         height: 165px;
 
@@ -605,7 +605,7 @@ footer ul {
     /********** Activités***********/
 
     .activites {
-        width: 75%;
+        width: 88%;
         padding-top: 37px;
     }
 
@@ -625,11 +625,10 @@ footer ul {
 
     /********** Footer ***********/
     footer {
-        display: flex;
-        width: 69%;
+        width: 83%;
     }
 
-    footer div,
+
     footer ul {
         width: 100%;
     }
@@ -648,7 +647,7 @@ footer ul {
 
 @media (max-width: 768px) {
 
-   
+    /**********Formulaire*********/
 
     .searchbar-pc {
         display: none;
@@ -658,6 +657,26 @@ footer ul {
         display: block;
     }
 
+    form {
+        margin: 35px 11px;
+    }
+
+    form button {
+        border: none;
+        background: none;
+        border: none;
+        border-radius: 0px 15px 15px 0px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 0;
+    }
+
+    /**********Général************/
     p {
         margin-right: 72px;
         margin-left: 22px;
@@ -691,6 +710,33 @@ footer ul {
     h6 {
         margin-left: 19px;
     }
+
+    /*************** Liste ****************/
+    .ul-header {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0 0px;
+    }
+
+    ul .header-li {
+        padding: 9px;
+        width: 147px;
+        margin: 0;
+    }
+
+    ul .header-li button {
+        width: 138px;
+        margin-left: 13px;
+        padding: 6px;
+    }
+
+    ul img {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 0px;
+    }
+
 
     /************ Header ************/
     header {
@@ -727,66 +773,25 @@ footer ul {
         margin: 0;
     }
 
-    /*********** Formulaire************/
 
-    form {
-        margin: 35px 11px;
-    }
-    form button {
-        border: none;
-        background: none;
-        border: none;
-        border-radius: 0px 15px 15px 0px;
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 300;
-        font-size: 18px;
-        line-height: 21px;
-        text-align: center;
-        color: #FFFFFF;
-        padding: 0;
-    }
 
-    /*************** Liste ****************/
-    .ul-header {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        margin: 0 0px;
-    }
-
-    ul .header-li {
-        padding: 9px;
-        width: 147px;
-        margin: 0;
-    }
-    ul .header-li button {
-        width: 138px;
-        margin-left: 13px;
-        padding: 6px;
-    }
-
-    ul img {
-        margin-left: 0px;
-        margin-right: 0px;
-        padding: 0px;
-    }
 
     /************* Hebergements et Populaire ************/
 
     .hebergements-and-populaires {
         display: flex;
         flex-direction: column-reverse;
-        max-width: 768px;
-        width: 110%;
+        width: 100%;
         margin-left: 5px;
     }
+
     /************* Hebergements ************/
 
     .hebergements {
         width: 108px;
         background: none;
     }
+
     .hebergementcard {
         margin-top: 91px;
         margin-left: 0px;
@@ -805,10 +810,10 @@ footer ul {
         height: 200px;
         margin: 20px 0;
     }
-    
+
     /*********Populaires**********/
 
-     .populaires {
+    .populaires {
         display: block;
         margin: 0;
         align-items: center;
@@ -816,13 +821,15 @@ footer ul {
         padding: 10px;
         margin-left: 0px;
     }
-     .populaires-cards {
+
+    .populaires-cards {
         display: flex;
         flex-direction: column;
         width: 98%;
         height: auto;
 
     }
+
     .populaires-cards .cards2 {
         display: flex;
         align-items: center;
@@ -850,7 +857,7 @@ footer ul {
     .activites .cards1 {
         display: flex;
         margin: 30px 16px;
-        width: 86%; 
+        width: 86%;
         height: auto;
     }
 
@@ -858,19 +865,20 @@ footer ul {
         width: 313px;
         height: 134px;
     }
-  
 
-    /**********footer*********/
+
+    /**********Footer*********/
 
     footer {
         display: flex;
         flex-direction: column;
         height: 473px;
         margin: 0;
-        padding: 0 0 20px 0;
+        padding: 0 20px;
         margin-top: 20px;
         width: 100%;
     }
+
     footer .articlefooter {
         padding: 0px;
         width: 58%;
