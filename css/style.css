@@ -279,20 +279,20 @@ form button {
     padding: 0px 0px 26px;
 
     margin: 2%;
-    flex: 1;
+    
 
 }
 
 .hebergements .card .img {
     height: 101px;
-    width: 246px;
+    width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    border: 8px solid #FFFFFF;
+    
 }
 
 .hebergements .card .card-content {
-    margin-left: 10px;
+    margin-left: 6px;
 }
 
 .hebergements .card .card-txt,
@@ -557,13 +557,14 @@ footer ul {
     }
 
     .hebergements .card .img {
-        width: 229px;
+        width: 203px;
+        padding: 2px;
     }
 
     .hebergements article.card {
        
-        width: 177px;
-        height: 165px;
+        width: 210px;
+        height: 190px;
 
     }
 
