@@ -18,10 +18,12 @@
 
 .main-container {
     height: 100%;
-    width: 100%;
+    width: 1440px;
     margin: 0 auto;
     padding: 0 10px;
     box-sizing: border-box;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 
@@ -32,6 +34,8 @@
     font-size: 18px;
     line-height: 21px;
     text-align: center;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 .main-container h6 {
@@ -97,7 +101,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    margin-top: 0;
+    padding-top: 0;
 }
 
 header .imglogo {
@@ -108,22 +113,21 @@ header .imglogo {
 header .container-header-link {
     display: flex;
     justify-content: flex-end;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 header a {
     color: black;
-    margin-top: 0;
     margin-right: 40px;
     text-decoration: none;
-    padding: 25px 10px;
+    padding: 23px 10px;
 }
 
 header a:hover {
     border-top: 2px solid #0065FC;
     color: #0065FC;
-    margin-top: 2px;
-    padding-top: -4px;
-    padding-bottom: 5px;
+    padding: 21px 10px;
 }
 
 /********Liste*********/
@@ -536,7 +540,7 @@ footer ul {
     ul .header-li button {
         font-size: 13px;
         margin-left: 0px;
-        width: 155px;
+        width: 172px;
     }
 
     /******** hebergements-and-populaires ********/
@@ -772,19 +776,22 @@ footer ul {
 
     .main-container ul .header-li {
         padding: 9px;
-        width: 39%;
-        margin: 2px;
-        
+        width: 41%;
+        margin: 1px;   
     }
 
     ul .header-li button {
         width: 100%;
-        padding: 6px;
-        padding-left: 12px;
+        padding: 12px;
+        padding-right: 27px;
         margin: 0 auto;
-        font-size: 80%;
+        font-size: 83%;
         text-align: left;
         align-items: center;
+    }
+
+    ul .header-li {
+        text-align: left;
     }
 
     ul img {
