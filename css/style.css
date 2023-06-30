@@ -18,7 +18,7 @@
 
 .main-container {
     height: 100%;
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
     padding: 0 10px;
     box-sizing: border-box;
@@ -425,9 +425,6 @@ form button {
     border-top-right-radius: 20px;
 }
 
-h3.card-title {
-    margin: 18px; 
-}
     
 /*********Footer*********/
 
@@ -630,12 +627,12 @@ footer ul {
 
     .populaires-cards .card-title {   
         font-size: 76%;
-        margin-top: 7px;
     }
 
     .populaires-cards .card-subtitle {
         font-size: 70%;
         margin-bottom: 49px;
+        margin-left: 5px;
     }
 
     .populaires-cards .cards2 img {
@@ -673,6 +670,7 @@ footer ul {
     .activites h3 {
         margin: 9px;
         padding: 9px;
+        padding-left: 11px;
     }
 
     /********** Footer ***********/
@@ -694,8 +692,9 @@ footer ul {
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 /****** Media queries Mobile ***********/
+/*la valeur initiale quand on récupère le projet*/
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767.98px){
 
     html {
         width: 100%;
@@ -705,8 +704,11 @@ footer ul {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 80%;
-        margin: 0 auto;
+        width: 100%;
+        
+    }
+.filters {
+    margin-left: 10px;
     }
 
     /**********Formulaire*********/
@@ -720,7 +722,10 @@ footer ul {
     }
 
     form {
-        margin: 35px 24px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 35px 0px;
     }
 
     form button {
@@ -740,10 +745,7 @@ footer ul {
 
     /**********Général************/
     
-    .icon p {
-        margin-right: 72px;
-        margin-left: 22px;
-    } 
+    
 
     .main-container { 
         margin: 0;
@@ -756,7 +758,7 @@ footer ul {
         width: 100%;
         margin-top: 54px;
         margin-bottom: 0px;
-        
+        margin-left: 10px;
     }
 
     h2,
@@ -766,7 +768,8 @@ footer ul {
         overflow-wrap: break-word;
         margin-top: 20px;
         margin-bottom: 20px;
-        font-size: 14px;
+        margin-left: 10px;
+        font-size: 19px;
     }
 
   
@@ -850,7 +853,6 @@ footer ul {
         align-items: center;
         flex-direction: column-reverse;
         width: 100%;
-        margin-left: 5px;
     }
 
     /************* Hebergements ************/
@@ -901,6 +903,7 @@ footer ul {
     }
     .afficher{
         width: 100%;
+        margin-left: 20px;
     }
 
     /*********Populaires**********/
@@ -910,8 +913,6 @@ footer ul {
         flex-direction: column;
         align-items: center;
         width: 100%;
-        padding: 20px;
-    
     }
 
     .populaires-cards {
@@ -926,7 +927,7 @@ footer ul {
     .populaires-cards .cards2 {
         display: flex;
         align-items: center;
-        width: 100%;
+        width: 97%;
         height: 145px;
     }
 
@@ -937,7 +938,7 @@ footer ul {
 
     .les_plus_populaires { 
         width: 100%;
-    
+        margin-left: 10px;
     }
 
     /*********** Activités***********/
@@ -984,8 +985,6 @@ footer ul {
     footer .articlefooter {
         width: 100%;
         padding: 0px;
-        margin-left: 36px;
-        margin-top: 10px;
     }
 
 }
